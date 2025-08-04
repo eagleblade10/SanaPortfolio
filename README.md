@@ -1,2 +1,0 @@
-# SanaWebsite
-Sana's Website
