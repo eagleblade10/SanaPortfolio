@@ -5,22 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Art Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<script src="js/script.js"></script>
 <body>
   <header>
     <h1>My Art Portfolio</h1>
     <nav>
-      <a href="index.html">Gallery</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="gallery fade-in">
-    <img src="images/art1.jpg" alt="Artwork 1" class="fade-in" />
-    <img src="images/art2.jpg" alt="Artwork 2" class="fade-in" />
-  </main>
+  <section id="about" class="about fade-in">
+    <img src="images/profile.jpg" alt="My profile" class="profile-pic" />
+    <h2>About Me</h2>
+    <p>Hello! I'm Sana, [Brief Explination]</p>
+  </section>
 
+  <section id="portfolio" class="gallery fade-in">
+    <h2>Portfolio</h2>
+    <div class="gallery-grid">
+      <img src="images/art1.jpg" alt="Art 1" />
+      <img src="images/art2.jpg" alt="Art 2" />
+      <!-- Add more artwork here -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/sm_architecture/">@Sana Architecture</a></p>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
